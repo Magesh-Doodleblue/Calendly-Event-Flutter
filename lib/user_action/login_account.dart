@@ -166,6 +166,9 @@ class _LoginUserAccountPageState extends State<LoginUserAccountPage> {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 30,
+                ),
               ],
             ),
           ],
