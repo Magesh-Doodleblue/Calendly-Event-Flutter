@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../event_people.dart';
 import '../find_event.dart';
 
 class LeftSide extends StatefulWidget {
@@ -251,7 +252,9 @@ class _LeftSideState extends State<LeftSide> {
                     horizontal: 20,
                   ),
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(peopleWidget());
+                    },
                     child: Row(
                       children: const [
                         Icon(
