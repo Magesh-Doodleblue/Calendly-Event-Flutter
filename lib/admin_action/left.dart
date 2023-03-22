@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../event_people.dart';
 import '../find_event.dart';
+import 'admin_profile.dart';
 
 class LeftSide extends StatefulWidget {
   const LeftSide({super.key});
@@ -283,7 +284,9 @@ class _LeftSideState extends State<LeftSide> {
                     horizontal: 20,
                   ),
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(const AdminProfileWidget());
+                    },
                     child: Row(
                       children: const [
                         Icon(
@@ -295,7 +298,7 @@ class _LeftSideState extends State<LeftSide> {
                           width: 20,
                         ),
                         Text(
-                          "Settings",
+                          "Your Profile",
                           style: TextStyle(
                             fontSize: 16,
                           ),

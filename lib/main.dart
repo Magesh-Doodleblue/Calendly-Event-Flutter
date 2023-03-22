@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'welcome_splash.dart';
 
 void main() {
@@ -17,7 +17,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(scaffoldBackgroundColor: Colors.grey[130]),
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.grey[130],
+        textTheme: GoogleFonts.poppinsTextTheme(
+          Theme.of(context).textTheme,
+        ),
+      ),
       debugShowCheckedModeBanner: false,
       home: const WelcomeSplashPage(),
     );

@@ -206,7 +206,7 @@ class _UserLeftSideState extends State<UserLeftSide> {
                           width: 20,
                         ),
                         Text(
-                          "Events",
+                          "Events Messages",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,

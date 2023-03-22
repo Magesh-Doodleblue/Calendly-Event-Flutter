@@ -25,6 +25,12 @@ class peopleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        foregroundColor: Colors.black,
+        title: const Text("Members of Community"),
+      ),
       backgroundColor: Colors.grey[400],
       body: SafeArea(
         child: Padding(
